@@ -1,0 +1,252 @@
+/* Navbar */
+
+.header h1{
+    height: 4rem;
+    line-height: 2;
+    margin: 0;
+    font-size: 2rem;
+    color: rgb(71, 64, 64);
+    padding-left: 2rem;
+    background-color: rgba(200, 241, 255, 0.235);
+}
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    margin-top: 3rem;
+
+}
+
+.inputContainer input {
+    height: 1.5rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+    border: 1px solid gray;
+}
+
+.addBtn {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1.8rem;
+    width: 4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #14A44D;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    transition: 0.3s transform;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.addBtn img{
+    height: 50%;
+    width: 25%;
+
+}
+
+
+
+.albumList {    
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: 1rem;
+    height: max-content;
+    justify-content: space-evenly;
+}
+
+.albumContainer {
+    display: flex;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 30%;
+    height: 11rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s transform;
+}
+
+.albumContainer:hover {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transform: scale(1.03);
+}
+
+.leftComponent img {
+    width: 10rem;
+    height: 100%;
+    border-radius: 0.7rem;
+
+}
+
+.rightComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    
+}
+
+.topBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.topBody span:nth-child(even) {
+    font-size: 1.2rem;
+    min-height: 5.4rem;
+    min-width: 14rem;
+    max-height: 5.5rem;
+    max-width: 14.5rem;
+    border-radius: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.331);
+    overflow-y: scroll;
+} 
+.topBody span:nth-child(even)::-webkit-scrollbar {
+    display: inline-block;
+    min-height: 5.3rem;
+    width: 7px;
+    
+}
+
+.topBody span:nth-child(even)::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 183, 0.3); 
+    border-radius: 0.7rem;
+}
+
+.topBody span:nth-child(even)::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.topBody input {
+    width: 14rem;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.title::-webkit-scrollbar {
+    display: none;
+}
+
+.bottomBody {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flipCard, 
+.editBtn,
+.updateBtn,
+.removeBtn {
+    width: 5.2rem;
+    height: 2rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid rgb(138, 138, 138);
+}
+
+.editBtn,
+.updateBtn {
+    background-color: lightgreen;
+}
+
+.removeBtn {
+    background-color: rgba(255, 100, 100, 0.813);
+}
+
+.removeBtn:hover {
+    background-color: red;
+}
+
+.editBtn:hover,
+.updateBtn:hover {
+    background-color: green;
+}
+
+
+.flipCard {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flipCard:hover .flipCardInner {
+    border-radius: 0.5rem;
+    transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+
+  
+.flipCardBack {
+    transform: rotateY(180deg);
+}
+
+.flipCardBack img {
+    width: 50%;
+    height: 50%;
+}
+
+/* .editBtn,
+.removeBtn {
+    width: 5rem;
+    padding: 0.4rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.editBtn {
+    background-color: lightgreen;
+    transition: 0.3s transform;
+}
+
+.editBtn:hover {
+    background-color: green;
+    transform: rotateY(180deg)
+    
+}
+
+.removeBtn {
+    width: 5.7rem;
+}
+ */
+
+
