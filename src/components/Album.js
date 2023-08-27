@@ -41,7 +41,7 @@ function Album({ album }) {
         <div className={styles.topBody}>
           <span className={styles.title}> Title : </span>
           {isEditable ? (
-            <input type="text" value={isLoading ? "Please wait..." : title} onChange={(e) => setTitle(e.target.value)} />
+            <input type="text" value={isLoading ? "Please wait..." : {title}} onChange={(e) => setTitle(e.target.value)} />
           ) : (
             <span> {title} </span>
           )}
